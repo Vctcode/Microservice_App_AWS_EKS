@@ -68,3 +68,9 @@ Using Terraform as an Infrastructure as a Code (IaaC) tool, create a `main.yml` 
 
 - Apply config to export specified port in ingress
 ![alt text](images/Ingress_apply.PNG)
+
+
+## Configuring App to Domain Name
+![alt text](images/AWS_Ingress_frontend.PNG)
+![alt text](images/Aws_graf_dashboard.PNG)
+![alt text](images/Aws_prom_dashboard.PNG)
