@@ -1,0 +1,20 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: my-certificate
+  # namespace: sock-shop
+spec:
+  secretName: tls-secret
+  issuerRef:
+    # name: letsencrypt-prod
+    name: letsencrypt-staging
+    kind: ClusterIssuer
+  commonName: vctcode.tech
+  dnsNames:
+    - vctcode.tech
+    - capstone.vctcode.tech
+    - grafana.vctcode.tech
+    - prometheus.vctcode.tech
+  usages:
+    - digital signature
+    - key encipherment
